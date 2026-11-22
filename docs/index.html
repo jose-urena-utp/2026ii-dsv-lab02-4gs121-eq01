@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self';
+                    img-src 'self'; 
+                    style-src 'self';
+                    base-uri 'self';
+                    form-action 'self'">
+
     <meta name="description"
             content="Servicio de préstamo a domicilio de la Biblioteca Universitaria: 
             condiciones, horarios y consulta de catálogo.">
@@ -46,8 +53,66 @@
     </nav>
         
     <main id="contenido">
+        <section id="servicio">
+            <h2>Servicio de préstamo a domicilio</h2>
+            <p>
+                El <dfn>préstamo a domicilio</dfn> permite llevar a casa los libros de la <strong>Colección General</strong> para 
+                revisarlos, estudiar o investigar fuera de la biblioteca. Quien recibe un libro en préstamo se hace responsable de su 
+                buen uso y de devolverlo en el tiempo acordado.
+            </p>
+        </section>
 
+        <section id="ejemplares">
+            <h2>Qué ejemplares se prestan</h2>
+            <p>
+                Cada título de la Colección General tiene varios ejemplares, numerados <abbr title="ejemplar">e.</abbr>1, e.2, e.3 y 
+                así sucesivamente:
+            </p>
+
+            <ul>
+                <li><strong>e.1</strong>: se queda en la biblioteca, para consulta en sala.</li>
+                <li><strong>e.2 en adelante</strong>: disponibles para préstamos a domicilio.</li>
+            </ul>    
+        </section>
+
+        <section id="renovaciones">
+            <h2>Cómo se renueva un préstamo</h2>
+
+            <p>
+                Los libros prestados se cargan en tu cuenta de usuario. Puedes renovarlos:
+            </p>
+            
+            <ol>
+                <li>Hasta <strong>tres veces</strong> cada préstamo.</li>
+                <li>Siempre que <strong>no tengas adeudos ni multas</strong> pendientes.</li>
+            </ol>
+        </section>
+
+        <section id="reglamento">
+            <h2>De dónde salen estas reglas</h2>
+
+            <blockquote cite="https://sistemadebibliotecas.utp.ac.pa/reglamento-de-sistema-de-bibliotecas">
+                <p>
+                    Se cargarán a la cuenta del usuario solicitante los libros prestados y podrá renovarlos hasta tres veces, siempre y 
+                    cuando no mantenga adeudo o multas.
+                </p>
+            </blockquote>
+            <p>
+                Fuente:
+                <a href="https://sistemadebibliotecas.utp.ac.pa/reglamento-de-sistema-de-bibliotecas" target="_blank"
+                rel="noopener noreferrer"><cite>Reglamento de Servicios Bibliotecarios del Sistema de Bibliotecas</cite></a>, 
+                Universidad Tecnológica de Panamá (abre en otra página).
+            </p>
+        </section>
     </main>
+
+    <aside>
+      <h2>Antes de pedir un libro</h2>
+      <p>
+        Consulta en el <a href="catalogo.html">catálogo</a> si hay ejemplares disponibles a domicilio y revisa en 
+        «Mis préstamos» que no tengan devoluciones pendientes.
+      </p>
+    </aside>
 
     <footer>
         <address>
@@ -58,12 +123,13 @@
         </address>
 
         <p>
-            Ultima actualización:
+            Última actualización:
             <time datetime="2026-11-21">21 de noviembre de 2026</time>.
         </p>
         
         <p>
-            Los datos presentados en este sitio son ficticios con fines académicos.
+            Proyecto académico del curso de Desarrollo de Software V, Universidad Tecnológica de Panamá, Centro Regional de Veraguas.
+            El catálogo, los prestamos y los datos de contacto son ficticios. 
         </p>
 
         <p><a href="#inicio">Volver arriba</a></p>
